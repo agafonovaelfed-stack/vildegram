@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VildeGram</title>
+
+    <meta
+        name="description"
+        content="VildeGram — premium messenger"
+    >
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="background">
+    <div class="orb orb-blue"></div>
+    <div class="orb orb-cyan"></div>
+    <div class="orb orb-purple"></div>
+</div>
+
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar glass">
+
+        <header class="sidebar-header">
+
+            <div class="logo">
+
+                <div class="logo-mark">
+                    <div class="logo-ribbon logo-left"></div>
+                    <div class="logo-ribbon logo-right"></div>
+                    <div class="logo-spark"></div>
+                </div>
+
+                <div class="logo-text">
+                    Vilde<span>Gram</span>
+                </div>
+
+            </div>
+
+            <button class="icon-button" id="themeButton">
+                ☼
+            </button>
+
+        </header>
+
+
+        <div class="search">
+            <span>⌕</span>
+            <input
+                type="text"
+                placeholder="Поиск"
+                id="searchInput"
+            >
+        </div>
+
+
+        <div class="folders">
+
+            <button class="folder active">
+                Все
+                <span>4</span>
+            </button>
+
+            <button class="folder">
+                Непрочитанные
+            </button>
+
+            <button class="folder">
+                Избранное
+            </button>
+
+        </div>
+
+
+        <div class="chat-list" id="chatList">
+
+            <button class="chat active">
+
+                <div class="avatar avatar-blue">
+                    A
+                </div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Alex</strong>
+                        <time>21:42</time>
+                    </div>
+
+                    <div class="chat-bottom">
+                        <span>Встретимся завтра?</span>
+                        <b>2</b>
+                    </div>
+                </div>
+
+            </button>
+
+
+            <button class="chat">
+
+                <div class="avatar avatar-purple">
+                    V
+                </div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>VildeGram</strong>
+                        <time>20:18</time>
+                    </div>
+
+                    <div class="chat-bottom">
+                        <span>Добро пожаловать ✨</span>
+                    </div>
+                </div>
+
+            </button>
+
+
+            <button class="chat">
+
+                <div class="avatar avatar-gold">
+                    M
+                </div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Maria</strong>
+                        <time>18:03</time>
+                    </div>
+
+                    <div class="chat-bottom">
+                        <span>Фото</span>
+                    </div>
+                </div>
+
+            </button>
+
+
+            <button class="chat">
+
+                <div class="avatar avatar-green">
+                    D
+                </div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Design Team</strong>
+                        <time>Вчера</time>
+                    </div>
+
+                    <div class="chat-bottom">
+                        <span>Новый макет готов</span>
+                    </div>
+                </div>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= CHAT ================= -->
+
+    <main class="chat-window glass">
+
+        <header class="chat-header">
+
+            <div class="chat-user">
+
+                <div class="avatar avatar-blue">
+                    A
+                </div>
+
+                <div>
+                    <h2>
+                        Alex
+                        <span class="verified"></span>
+                    </h2>
+
+                    <p>
+                        <span class="online-dot"></span>
+                        в сети
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="icon-button">
+                    ☎
+                </button>
+
+                <button class="icon-button">
+                    ◉
+                </button>
+
+                <button class="icon-button">
+                    ⋮
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <section class="messages" id="messages">
+
+            <div class="date">
+                Сегодня
+            </div>
+
+
+            <div class="message-row incoming">
+
+                <div class="message">
+
+                    <div class="message-author">
+                        Alex
+                    </div>
+
+                    <p>
+                        Привет! Как тебе новый VildeGram?
+                    </p>
+
+                    <time>21:39</time>
+
+                </div>
+
+            </div>
+
+
+            <div class="message-row outgoing">
+
+                <div class="message">
+
+                    <p>
+                        Выглядит очень красиво 🔥
+                    </p>
+
+                    <time>
+                        21:40
+                        <span class="checks">✓✓</span>
+                    </time>
+
+                </div>
+
+            </div>
+
+
+            <div class="message-row incoming">
+
+                <div class="message">
+
+                    <p>
+                        Особенно нравится этот glass эффект.
+                    </p>
+
+                    <time>21:41</time>
+
+                </div>
+
+            </div>
+
+
+            <div class="message-row outgoing">
+
+                <div class="message">
+
+                    <p>
+                        В следующей версии добавим звонки и WebRTC.
+                    </p>
+
+                    <time>
+                        21:42
+                        <span class="checks">✓✓</span>
+                    </time>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="typing">
+            Alex печатает...
+        </div>
+
+
+        <form class="composer" id="composer">
+
+            <button
+                type="button"
+                class="icon-button"
+            >
+                ＋
+            </button>
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Сообщение..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                class="icon-button emoji"
+            >
+                ☺
+            </button>
+
+            <button
+                class="send"
+                type="submit"
+            >
+                ➤
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <aside class="profile glass">
+
+        <div class="profile-cover"></div>
+
+        <div class="profile-avatar avatar avatar-blue">
+            A
+        </div>
+
+        <h2>Alex</h2>
+
+        <p class="username">
+            @alex
+            <span class="verified"></span>
+        </p>
+
+        <p class="bio">
+            Люблю технологии, дизайн
+            и красивые интерфейсы.
+        </p>
+
+
+        <div class="profile-section">
+
+            <div class="profile-item">
+                <span>Телефон</span>
+                <strong>•••• 4821</strong>
+            </div>
+
+            <div class="profile-item">
+                <span>Дата рождения</span>
+                <strong>12 июня</strong>
+            </div>
+
+            <div class="profile-item">
+                <span>Общие группы</span>
+                <strong>3</strong>
+            </div>
+
+        </div>
+
+
+        <button class="profile-button">
+            Профиль
+        </button>
+
+        <button class="profile-button danger">
+            Заблокировать
+        </button>
+
+    </aside>
+
+</div>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
